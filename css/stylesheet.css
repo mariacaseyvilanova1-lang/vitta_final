@@ -1,0 +1,463 @@
+
+italiana
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f1f1ed;
+    color: #353535;
+    font-family: 'Times New Roman', serif;
+    font-size: 17px;
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Italiana', Georgia, serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 42px;
+    margin-bottom: 22px;
+}
+
+h3 {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.etiqueta {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+small {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: white;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 7%;
+    border-bottom: 1px solid #dddddd;
+}
+
+.logo {
+    font-size: 30px;
+    letter-spacing: 8px;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #77776d;
+}
+
+
+/* BANNER */
+
+.banner {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    padding: 60px 7%;
+    background-color: #f1f1ed;
+}
+
+.texto-banner {
+    width: 48%;
+}
+
+.texto-banner > p:not(.etiqueta) {
+    max-width: 500px;
+}
+
+.banner > img {
+    width: 45%;
+    height: 330px;
+}
+
+
+/* BOTONES */
+
+.boton {
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #444444;
+    color: white;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.boton:hover {
+    background-color: #222222;
+    text-decoration: none;
+}
+
+
+/* CATEGORIAS */
+
+.categorias {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 60px 7%;
+    text-align: center;
+}
+
+.categoria {
+    padding: 10px;
+}
+
+.categoria span {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #777777;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 28px;
+}
+
+.categoria h3 {
+    font-size: 23px;
+}
+
+.categoria p {
+    font-size: 14px;
+}
+
+
+/* ARTICULOS INICIO */
+
+.articulos {
+    display: flex;
+    gap: 50px;
+    padding: 70px 7%;
+    background-color: #f5f5f2;
+}
+
+.titulo-articulos {
+    width: 35%;
+}
+
+.lista-articulos {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    background-color: white;
+    min-height: 130px;
+}
+
+.card img {
+    width: 190px;
+    height: 130px;
+}
+
+.card div {
+    padding: 15px 20px;
+}
+
+.card h3 {
+    font-size: 21px;
+    margin: 10px 0;
+}
+
+.card a {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+
+/* CONTENIDO DE OTRAS PAGINAS */
+
+.contenido {
+    padding: 80px 7%;
+    background-color: white;
+}
+
+.fondo {
+    background-color: #e9e9e5;
+}
+
+.contenido > p:not(.etiqueta) {
+    max-width: 800px;
+}
+
+
+/* TARJETAS */
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.tarjetas article {
+    background-color: #f5f5f2;
+    padding-bottom: 25px;
+}
+
+.tarjetas img {
+    width: 100%;
+    height: 240px;
+}
+
+.tarjetas h3,
+.tarjetas p,
+.tarjetas small,
+.tarjetas a {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.tarjetas h3 {
+    margin-top: 20px;
+}
+
+.tarjetas p {
+    font-size: 15px;
+}
+
+.tarjetas a {
+    font-size: 14px;
+    text-decoration: underline;
+    margin-top: 15px;
+}
+
+.tarjetas small {
+    margin-top: 15px;
+}
+
+
+/* PLAN DE ALIMENTACION */
+
+.plan {
+    background-color: white;
+    padding: 30px;
+    margin: 30px 0;
+    max-width: 650px;
+    border: 1px solid #dddddd;
+}
+
+
+/* NEWSLETTER */
+
+.newsletter {
+    background-color: #e9e9e5;
+    padding: 60px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.newsletter > div {
+    width: 55%;
+}
+
+.newsletter h2 {
+    font-size: 38px;
+}
+
+.newsletter form {
+    display: flex;
+    margin-top: 25px;
+}
+
+.newsletter input {
+    width: 300px;
+    max-width: 100%;
+    padding: 14px;
+    border: 1px solid #aaaaaa;
+    font-family: 'Times New Roman', serif;
+}
+
+.newsletter button {
+    padding: 14px 20px;
+    background-color: #444444;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter > img {
+    width: 35%;
+    height: 200px;
+}
+
+
+/* FOOTER */
+
+footer {
+    min-height: 120px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 7%;
+    border-top: 1px solid #dddddd;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* CELULARES Y TABLETS */
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    .banner {
+        flex-direction: column;
+        padding: 50px 6%;
+    }
+
+    .texto-banner {
+        width: 100%;
+    }
+
+    .banner > img {
+        width: 100%;
+        height: 270px;
+    }
+
+    .categorias {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .articulos {
+        flex-direction: column;
+        padding: 55px 6%;
+    }
+
+    .titulo-articulos,
+    .lista-articulos {
+        width: 100%;
+    }
+
+    .contenido {
+        padding: 55px 6%;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter {
+        flex-direction: column;
+        padding: 55px 6%;
+    }
+
+    .newsletter > div,
+    .newsletter > img {
+        width: 100%;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        padding: 30px 6%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .card img {
+        width: 115px;
+        height: 145px;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter input {
+        width: 100%;
+    }
+}
+
